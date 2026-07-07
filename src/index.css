@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Wedding palette ---- */
+  --color-paper: #FFFFFF;
+  --color-gold: #D4AF37;
+  --color-gold-deep: #B08D2B;
+  --color-gold-soft: #E7CE84;
+  --color-sage: #A8B79A;
+  --color-sage-deep: #7E8E71;
+  --color-beige: #F1E7D6;
+  --color-ink: #2B2620;
+  --color-ink-soft: #5C5346;
+
+  /* ---- Type ---- */
+  --font-display: "Cormorant Garamond", "Times New Roman", serif;
+  --font-body: "Jost", "Helvetica Neue", sans-serif;
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+  
+}
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background-color: var(--color-gold-soft);
+    color: var(--color-ink);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .tracking-wedding {
+    letter-spacing: 0.35em;
+  }
+
+  .text-stroke-gold {
+    -webkit-text-stroke: 1px var(--color-gold);
+  }
+  
+  .snap-section {
+    scroll-snap-align: start;
+    scroll-margin-top: 4.5rem; /* roughly your navbar height */
+  }
+}
+
+/* Respect reduced-motion preference globally */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
