@@ -1,14 +1,27 @@
 import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import LeafDivider from './LeafDivider.jsx'
+import photo1 from '../assets/im1.jpg'
+import photo2 from '../assets/im2.jpg'
+import photo3 from '../assets/im3.jpg'
+import photo4 from '../assets/im4.jpg'
+import photo5 from '../assets/im5.jpeg'
+import photo6 from '../assets/im6.JPG'
+import photo7 from '../assets/im7.jpg'
+import photo8 from '../assets/im8.JPG'
 
 // Replace `src` with real photo paths later — everything else (grid,
 // hover state, lightbox) will keep working unchanged.
-const PHOTOS = Array.from({ length: 8 }, (_, i) => ({
-  id: i + 1,
-  src: null, // e.g. '/gallery/photo-1.jpg'
-  alt: `Wedding gallery placeholder ${i + 1}`,
-}))
+const PHOTOS = [
+  { id: 1, src: photo1, alt: 'Wedding gallery photo 1' },
+  { id: 2, src: photo2, alt: 'Wedding gallery photo 2' },
+  { id: 3, src: photo3, alt: 'Wedding gallery photo 3' },
+  { id: 4, src: photo4, alt: 'Wedding gallery photo 4' },
+  { id: 5, src: photo5, alt: 'Wedding gallery photo 5' },
+  { id: 6, src: photo6, alt: 'Wedding gallery photo 6' },
+  { id: 7, src: photo7, alt: 'Wedding gallery photo 7' },
+  { id: 8, src: photo8, alt: 'Wedding gallery photo 8' },
+]
 
 export default function Gallery() {
   const [activePhoto, setActivePhoto] = useState(null)
@@ -51,7 +64,7 @@ export default function Gallery() {
             className="relative aspect-square overflow-hidden rounded-sm bg-[var(--color-beige)] border border-[var(--color-gold-soft)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--color-gold)]"
           >
             {photo.src ? (
-              <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover" />
+              <img src={photo.src} alt={photo.alt} className="w-full h-full object-cover object-top" />
             ) : (
               <div className="w-full h-full flex items-center justify-center">
                 <span className="font-display italic text-sm text-[var(--color-sage-deep)]">
@@ -83,7 +96,7 @@ export default function Gallery() {
               onClick={(e) => e.stopPropagation()}
             >
               {activePhoto.src ? (
-                <img src={activePhoto.src} alt={activePhoto.alt} className="w-full h-full object-cover rounded-sm" />
+                <img src={activePhoto.src} alt={activePhoto.alt} className="w-full h-full object-cover object-top rounded-sm" />
               ) : (
                 <span className="font-display italic text-[var(--color-sage-deep)]">
                   Photo {activePhoto.id}
