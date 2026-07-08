@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import LeafDivider from './LeafDivider.jsx'
-import met from '../assets/met.jpg'
+import met from '../assets/met.JPG'
 import proposal from '../assets/proposal.jpeg'
 import middle from '../assets/middle.jpg'
 import { image } from 'framer-motion/client'
