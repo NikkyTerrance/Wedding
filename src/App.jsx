@@ -29,7 +29,7 @@ function App() {
         <WeddingDetails />
        <Story />
         <Gallery />
-        <RSVP />
+        {/* <RSVP /> */}
       </main>
 
       <Footer />

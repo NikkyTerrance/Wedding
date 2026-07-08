@@ -4,9 +4,9 @@ import { motion } from 'framer-motion'
 const LINKS = [
   { label: 'Home', href: '#home' },
   { label: 'Details', href: '#details' },
-  //{ label: 'Story', href: '#story' },
-  //{ label: 'Gallery', href: '#gallery' },
-  { label: 'RSVP', href: '#rsvp' },
+  { label: 'Story', href: '#story' },
+  { label: 'Gallery', href: '#gallery' },
+  //{ label: 'RSVP', href: '#rsvp' },
 ]
 
 export default function Navbar() {

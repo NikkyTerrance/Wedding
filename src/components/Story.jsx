@@ -1,22 +1,29 @@
 import { motion } from 'framer-motion'
 import LeafDivider from './LeafDivider.jsx'
+import met from '../assets/met.jpg'
+import proposal from '../assets/proposal.jpeg'
+import middle from '../assets/middle.jpg'
+import { image } from 'framer-motion/client'
 
 // Replace this placeholder copy with your real story whenever you're ready.
 const CHAPTERS = [
   {
     year: 'How we met',
     title: 'A chance introduction',
-    text: 'Replace this with the story of how Nikky and Emily first met — the place, the moment, the small detail neither of you forgot.',
+    text: 'A simple birthday wish on Instagram brought Nikky and Emily together, discovering they had studied together as children, talking day and night, and finally meeting for the first time near the London Eye.',
+    image: met,
   },
   {
     year: 'Falling in love',
     title: 'Somewhere along the way',
-    text: 'Replace this with a memory from early on — a trip, a joke that became "yours," the moment it started to feel like forever.',
+    text: 'A day filled with colours, music, and new experiences. Embracing the beauty of Goa culture and creating unforgettable memories together.',
+    image: middle,
   },
   {
     year: 'The proposal',
     title: 'A question, answered',
-    text: 'Replace this with the story of the proposal — where it happened, who was in on it, and what was said.',
+    text: 'The moment the question was asked, a heartfelt proposal filled with love, excitement, and a beautiful “yes” that marked the beginning of forever together.',
+    image: proposal,
   },
 ]
 
@@ -60,7 +67,11 @@ export default function Story() {
               {/* IMAGE PLACEHOLDER — swap for a real photograph */}
               <div className="w-full md:w-1/2">
                 <div className="aspect-[4/5] w-full max-w-sm mx-auto bg-[var(--color-beige)] border border-[var(--color-gold-soft)] rounded-sm flex items-center justify-center">
-                  <span className="font-display italic text-[var(--color-sage-deep)]">Photo coming soon</span>
+                  <img
+                    src={chapter.image}
+                    alt={chapter.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
 

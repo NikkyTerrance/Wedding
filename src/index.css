@@ -24,7 +24,7 @@
 
   html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: y proximity;
 
   
 }
@@ -61,7 +61,7 @@
   
   .snap-section {
     scroll-snap-align: start;
-    scroll-margin-top: 4.5rem; /* roughly your navbar height */
+    scroll-margin-top: 4.5 rem; /* roughly your navbar height */
   }
 }
 
