@@ -87,7 +87,7 @@ export default function Hero() {
           transition={{ duration: 0.9, delay: 1.3 }}
           className="font-display italic text-lg sm:text-xl text-[var(--color-ink-soft)] max-w-md mx-auto"
         >
-          Together with their families, invite you to celebrate their wedding
+          Together with our families, invite you to celebrate our wedding
         </motion.p>
 
         <motion.p

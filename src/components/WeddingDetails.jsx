@@ -4,7 +4,7 @@ import LeafDivider from './LeafDivider.jsx'
 const EVENTS = [
   {
     label: 'The Wedding Mass',
-    time: '10:00 AM',
+    time: '09:30 AM',
     venue: "St Mary's Cathedral",
     place: 'Trincomalee, Sri Lanka',
     note: 'A quiet ceremony of vows, blessed within the cathedral walls.',
@@ -18,7 +18,7 @@ const EVENTS = [
   },
   {
     label: 'The Wedding Lunch',
-    time: '1:00 PM',
+    //time: '1:00 PM',
     venue: 'JKAB Beach Resort',
     place: 'Trincomalee, Sri Lanka',
     note: 'An afternoon of feasting and celebration by the shore.',
