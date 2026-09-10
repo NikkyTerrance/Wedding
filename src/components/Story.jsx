@@ -16,7 +16,7 @@ const CHAPTERS = [
   {
     year: 'Falling in love',
     title: 'Somewhere along the way',
-    text: 'A day filled with colours, music, and new experiences. Embracing the beauty of Goa culture and creating unforgettable memories together.',
+    text: 'A day filled with colours, music, and new experiences. Embracing the beauty of Goan culture and creating unforgettable memories together.',
     image: middle,
   },
   {

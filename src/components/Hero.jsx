@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import churchImg from '../assets/church.jpg'
 
 // Floating gold particle positions — deliberately irregular, not a grid,
 // so they read as drifting light rather than a decorative pattern.
@@ -45,7 +46,7 @@ export default function Hero() {
       ))}
 
       {/* HERO IMAGE PLACEHOLDER — replace this div with an <img> of the couple */}
-      <motion.div
+      {/* <motion.div
         initial={{ opacity: 0, scale: 1.05 }}
         animate={{ opacity: 0.12, scale: 1 }}
         transition={{ duration: 2, ease: 'easeOut' }}
@@ -53,7 +54,23 @@ export default function Hero() {
         aria-hidden="true"
       >
         <div className="w-[520px] h-[520px] rounded-full border border-[var(--color-gold-soft)]" />
-      </motion.div>
+      </motion.div> */}
+       <motion.div
+          initial={{ opacity: 0, scale: 1.05 }}
+          animate={{ opacity: 0.14, scale: 1 }}
+          transition={{ duration: 2, ease: 'easeOut' }}
+          className="absolute inset-0"
+          aria-hidden="true"
+          style={{
+            backgroundImage: `url(${churchImg})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            WebkitMaskImage:
+              'radial-gradient(ellipse 60% 55% at 50% 40%, black 40%, transparent 95%)',
+            maskImage:
+              'radial-gradient(ellipse 60% 55% at 50% 40%, black 40%, transparent 95%)',
+          }}
+        />
 
       <div className="relative z-10 px-6 text-center">
         <motion.p
