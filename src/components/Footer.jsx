@@ -16,9 +16,9 @@ export default function Footer() {
         <h3 className="font-display text-3xl tracking-wide">Nikky &amp; Emily</h3>
 
         <div className="font-body text-sm tracking-[0.15em] uppercase text-[var(--color-gold-soft)] flex flex-col sm:flex-row gap-2 sm:gap-6">
-          <span>St Mary's Cathedral · 10:00 AM</span>
+          <span>St Mary's Cathedral </span>
           <span className="hidden sm:inline">•</span>
-          <span>JKAB Beach Resort · 1:00 PM</span>
+          <span>JKAB Beach Resort </span>
         </div>
 
         <p className="font-body text-xs tracking-[0.15em] uppercase text-[var(--color-beige)]/60">

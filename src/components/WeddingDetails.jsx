@@ -4,7 +4,7 @@ import LeafDivider from './LeafDivider.jsx'
 const EVENTS = [
   {
     label: 'The Wedding Mass',
-    time: '10:30 AM',
+    time: '09:30 AM',
     venue: "St Mary's Cathedral",
     place: 'Trincomalee, Sri Lanka',
     note: 'A quiet ceremony of vows, blessed within the cathedral walls.',
