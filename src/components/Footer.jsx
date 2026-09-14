@@ -18,7 +18,7 @@ export default function Footer() {
         <div className="font-body text-sm tracking-[0.15em] uppercase text-[var(--color-gold-soft)] flex flex-col sm:flex-row gap-2 sm:gap-6">
           <span>St Mary's Cathedral </span>
           <span className="hidden sm:inline">•</span>
-          <span>JKAB Beach Resort </span>
+          <span>JKAB Park </span>
         </div>
 
         <p className="font-body text-xs tracking-[0.15em] uppercase text-[var(--color-beige)]/60">
