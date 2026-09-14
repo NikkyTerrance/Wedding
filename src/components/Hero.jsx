@@ -77,7 +77,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.2 }}
-          className="font-body text-xs md:text-sm tracking-[0.5em] uppercase text-[var(--color-sage-deep)] mb-6"
+          className="font-body text-xs md:text-sm font-bold tracking-[0.5em] uppercase text-[var(--color-sage-deep)] mb-6"
         >
           We're getting married
         </motion.p>
@@ -102,7 +102,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 12 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 1.3 }}
-          className="font-display italic text-lg sm:text-xl text-[var(--color-ink-soft)] max-w-md mx-auto"
+          className="font-display italic text-lg sm:text-xl font-semibold text-[var(--color-ink-soft)] max-w-md mx-auto"
         >
           Together with our families, We invite you to celebrate our wedding
         </motion.p>
@@ -111,7 +111,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.9, delay: 1.6 }}
-          className="font-body text-sm tracking-[0.3em] uppercase text-[var(--color-ink-soft)] mt-6"
+          className="font-body text-sm tracking-[0.3em] font-bold uppercase  text-[var(--color-ink-soft)] mt-6"
         >
           Trincomalee, Sri Lanka
         </motion.p>
@@ -126,7 +126,7 @@ export default function Hero() {
           className="mt-14 inline-flex flex-col items-center gap-2 text-[var(--color-gold-deep)] focus:outline-none"
           aria-label="Scroll to wedding details"
         >
-          <span className="text-[10px] tracking-[0.3em] uppercase">Discover more</span>
+          <span className="text-[10px] tracking-[0.3em] font-bold uppercase">Discover more</span>
           <motion.span
             animate={{ y: [0, 6, 0] }}
             transition={{ duration: 1.8, repeat: Infinity, ease: 'easeInOut' }}
